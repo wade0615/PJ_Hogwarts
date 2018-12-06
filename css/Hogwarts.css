@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  border: 1px solid #666666;
   font-family: 微軟正黑體;
   position: relative;
 }
@@ -31,21 +30,21 @@ body section#hogwarts {
 
 body section#hogwarts .row {
   margin-bottom: 20px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
-body section#hogwarts .row p {
+body section#hogwarts .row .p {
   margin: 0;
+  border-radius: 50%;
   background-size: 100%;
   background-position: center 54%;
   background-repeat: no-repeat;
-  opacity: 0.3;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
 
-body section#hogwarts .row p:hover {
+body section#hogwarts .row .p:hover {
   opacity: 1;
   background-size: 140%;
   cursor: pointer;
@@ -53,35 +52,63 @@ body section#hogwarts .row p:hover {
 
 body section#hogwarts .row .gry {
   color: red;
-  height: 280px;
-  border-radius: 50%;
   background-image: url(https://i.imgur.com/9G7wc3v.jpg);
 }
 
 body section#hogwarts .row .rav {
   color: blue;
-  height: 280px;
-  border-radius: 50%;
   background-image: url(https://i.imgur.com/xfWJnlL.jpg);
 }
 
 body section#hogwarts .row .huf {
   color: yellow;
-  height: 280px;
-  border-radius: 50%;
   background-image: url(https://i.imgur.com/8FXXnvG.jpg);
 }
 
 body section#hogwarts .row .sly {
   color: green;
-  height: 280px;
-  border-radius: 50%;
   background-image: url(https://i.imgur.com/byl3t9O.jpg);
 }
 
-.ani {
-  background-image: url(https://i.imgur.com/EaI4UpW.jpg);
+.p_ani {
+  margin: 0;
   height: 580px;
   border-radius: 0%;
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.p_ani:hover {
+  opacity: 1;
+}
+
+.p_show {
+  height: 280px;
+  opacity: 0.5;
+}
+
+.p_hide {
+  height: 0px;
+  opacity: 0;
+}
+
+.gry_ani {
+  background-image: url(https://i.imgur.com/EaI4UpW.jpg);
+}
+
+.rav_ani {
+  background-image: url(https://i.imgur.com/CVVvVbi.jpg);
+}
+
+.huf_ani {
+  background-image: url(https://i.imgur.com/LBGPdr1.jpg);
+}
+
+.sly_ani {
+  background-image: url(https://i.imgur.com/IvYhTLN.jpg);
 }
 /*# sourceMappingURL=Hogwarts.css.map */
