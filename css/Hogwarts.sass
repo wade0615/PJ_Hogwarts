@@ -56,6 +56,7 @@ body
                 background-image: url(https://i.imgur.com/byl3t9O.jpg)
 
 .p_ani
+    color: white
     margin: 0
     height: 580px
     border-radius: 0%
@@ -83,3 +84,18 @@ body
     background-image: url(https://i.imgur.com/LBGPdr1.jpg)
 .sly_ani
     background-image: url(https://i.imgur.com/IvYhTLN.jpg)
+
+h5
+    top: 250px
+    margin: 60px
+    letter-spacing: 1px
+    opacity: 0
+    animation: mymove 2s
+    animation-delay: 1s
+    animation-fill-mode: forwards
+
+@keyframes mymove
+    from
+        opacity: 0
+    to
+        opacity: 1
