@@ -6,7 +6,7 @@
 
 body {
   background-position: center center;
-  height: 100vh;
+  height: 101vh;
 }
 
 body::before {
@@ -95,6 +95,8 @@ body section#hogwarts .row .sly {
 .p_hide {
   height: 0px;
   opacity: 0;
+  -webkit-animation: p_hide 0.5s;
+          animation: p_hide 0.5s;
 }
 
 .gry_ani {
@@ -118,15 +120,15 @@ h5 {
   margin: 60px;
   letter-spacing: 1px;
   opacity: 0;
-  -webkit-animation: mymove 2s;
-          animation: mymove 2s;
+  -webkit-animation: showH5 2s;
+          animation: showH5 2s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes mymove {
+@-webkit-keyframes showH5 {
   from {
     opacity: 0;
   }
@@ -135,12 +137,30 @@ h5 {
   }
 }
 
-@keyframes mymove {
+@keyframes showH5 {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes p_hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes p_hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=Hogwarts.css.map */
