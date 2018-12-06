@@ -1,0 +1,87 @@
+@charset "UTF-8";
+* {
+  border: 1px solid #666666;
+  font-family: 微軟正黑體;
+  position: relative;
+}
+
+body {
+  background-position: center center;
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-position: center center;
+  background-image: url(https://i.imgur.com/52pBBKJ.jpg);
+  background-size: cover;
+}
+
+body section#hogwarts {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body section#hogwarts .row {
+  margin-bottom: 20px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body section#hogwarts .row p {
+  margin: 0;
+  background-size: 100%;
+  background-position: center 54%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body section#hogwarts .row p:hover {
+  opacity: 1;
+  background-size: 140%;
+  cursor: pointer;
+}
+
+body section#hogwarts .row .gry {
+  color: red;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(https://i.imgur.com/9G7wc3v.jpg);
+}
+
+body section#hogwarts .row .rav {
+  color: blue;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(https://i.imgur.com/xfWJnlL.jpg);
+}
+
+body section#hogwarts .row .huf {
+  color: yellow;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(https://i.imgur.com/8FXXnvG.jpg);
+}
+
+body section#hogwarts .row .sly {
+  color: green;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(https://i.imgur.com/byl3t9O.jpg);
+}
+
+.ani {
+  background-image: url(https://i.imgur.com/EaI4UpW.jpg);
+  height: 580px;
+  border-radius: 0%;
+}
+/*# sourceMappingURL=Hogwarts.css.map */
