@@ -1,5 +1,11 @@
 // 我要開始玩JS操作精細動畫囉
 
+// entrance 玄關動畫
+$("button").click(
+    function() {
+        $("#entrance").fadeOut(1000)
+    }
+)
 
 $("#gry").click(
     function() {
