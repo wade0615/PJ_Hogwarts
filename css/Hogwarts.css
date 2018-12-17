@@ -19,7 +19,7 @@ body::before {
   z-index: -1;
   background-position: center center;
   background-image: url(https://i.imgur.com/52pBBKJ.jpg);
-  background-size: 100%;
+  background-size: auto 100%;
   -webkit-animation: castle 10s infinite;
           animation: castle 10s infinite;
 }
@@ -32,7 +32,8 @@ body section#entrance {
   z-index: 2;
   background-position: center center;
   background-image: url(https://i.imgur.com/PZ5EhP3.jpg);
-  background-size: 80%;
+  background-size: auto 100%;
+  background-color: black;
   -webkit-filter: brightness(0);
           filter: brightness(0);
   -webkit-animation: entrance 5s;
@@ -98,11 +99,16 @@ body section#hogwarts .row .sly {
   background-image: url(https://i.imgur.com/byl3t9O.jpg);
 }
 
-body section#hogwarts .row .col-2 h3 {
+body section#hogwarts .row div h3 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+body section#hogwarts .row p h5 {
+  font-size: 20px;
+  margin: 0px 50px;
 }
 
 .p_ani {
