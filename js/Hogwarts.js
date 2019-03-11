@@ -23,8 +23,15 @@ $("#gry").click(
 
             $(".homeGR").fadeIn()
 
-            $("section#hogwarts .row p h5").css("font-size", "14px");
-            $("section#hogwarts h5").css("margin", "0px 30px");
+            if ($(window).width() < 769) {
+                $("section#hogwarts h5").css("margin", "0px 30px");
+                $("section#hogwarts .row p h5").css("font-size", "14px");
+            } else {
+                $("section#hogwarts h5").css("margin", "0px 60px");
+                $("section#hogwarts .row p h5").css("font-size", "18px");
+            }
+            // $("section#hogwarts .row p h5").css("font-size", "14px");
+            // $("section#hogwarts h5").css("margin", "0px 30px");
         } else {}
 
     }
@@ -45,8 +52,13 @@ $("#rav").click(
 
             $(".homeGR").fadeIn()
 
-            $("section#hogwarts .row p h5").css("font-size", "14px");
-            $("section#hogwarts h5").css("margin", "0px 30px");
+            if ($(window).width() < 769) {
+                $("section#hogwarts h5").css("margin", "0px 30px");
+                $("section#hogwarts .row p h5").css("font-size", "14px");
+            } else {
+                $("section#hogwarts h5").css("margin", "0px 60px");
+                $("section#hogwarts .row p h5").css("font-size", "18px");
+            }
         } else {}
 
     }
@@ -67,8 +79,13 @@ $("#huf").click(
 
             $(".homeHS").fadeIn()
 
-            $("section#hogwarts .row p h5").css("font-size", "14px");
-            $("section#hogwarts h5").css("margin", "0px 30px");
+            if ($(window).width() < 769) {
+                $("section#hogwarts h5").css("margin", "0px 30px");
+                $("section#hogwarts .row p h5").css("font-size", "14px");
+            } else {
+                $("section#hogwarts h5").css("margin", "0px 60px");
+                $("section#hogwarts .row p h5").css("font-size", "18px");
+            }
         } else {}
     }
 )
@@ -88,8 +105,13 @@ $("#sly").click(
 
             $(".homeHS").fadeIn()
 
-            $("section#hogwarts .row p h5").css("font-size", "14px");
-            $("section#hogwarts h5").css("margin", "0px 30px");
+            if ($(window).width() < 769) {
+                $("section#hogwarts h5").css("margin", "0px 30px");
+                $("section#hogwarts .row p h5").css("font-size", "14px");
+            } else {
+                $("section#hogwarts h5").css("margin", "0px 60px");
+                $("section#hogwarts .row p h5").css("font-size", "18px");
+            }
         } else {}
     }
 )
